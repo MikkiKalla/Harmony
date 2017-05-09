@@ -6,6 +6,13 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="css/ether.css">
+	<link rel="stylesheet" href="css/air.css">
+	<link rel="stylesheet" href="css/fire.css">
+	<link rel="stylesheet" href="css/water.css">
+	<link rel="stylesheet" href="css/earth.css">
 	<title>Lokaverkefni SVG drawing</title>
 	
 
@@ -201,35 +208,257 @@
 	</div>
 
 	<div class="canvas-temp" id="ether">
+
+		<div class='stars'>
+		    <div><img id='star1' src="images/star.png" alt=""></div>
+		    <div id='star2'><img src="images/star.png" alt=""></div>
+		    <div id='star3'><img src="images/star.png" alt=""></div>
+		    <div id='star4'><img src="images/star.png" alt=""></div>
+		    <div id='star5'><img src="images/star.png" alt=""></div>
+		    <div id='star6'><img src="images/star.png" alt=""></div>
+		    <div id='star7'><img src="images/star.png" alt=""></div>
+		    <div id='star8'><img src="images/star.png" alt=""></div>
+  		</div>
 		
 
 	</div> <!-- END ETHER DIV -->
 
 	<div class="canvas-temp" id="air">
+
+		<style>
+      		/* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+
+				.wrap {
+				  position: fixed;
+				  top: 0;
+				  left: 0;
+				  width: 100%;
+				  height: 100%;
+				  background-color: #87CEEB;
+				  animation: air 180s infinite;
+				}
+
+				@keyframes air {
+				   0% {
+				    background-color: #87CEEB;
+				  }
+				  25% {
+				    background-color: #C4A4B3;
+				  }
+				  50% {
+				    background-color: #F4E4CD;
+				  }
+				  75% {
+				    background-color: #C4A4B3;
+				  }
+				  100% {
+				    background-color: #87CEEB;
+				  }
+				}
+				.flower {
+				  position: absolute;
+				  will-change: transform;
+				}
+				.flower img {
+				  will-change: transform;
+				  display: inline-block;
+				}
+				.flower span {
+				  will-change: transform;
+				  animation: rocking 24.5s alternate infinite;
+				  display: inline-block;
+				}
+
+				.dandelion img{
+				  height: 900px;
+				  margin-left: 50px;
+				}
+
+				@keyframes rocking {
+				  0%,
+				  100% {
+				    transform: translateY(0) rotate(0deg) translateX(0);
+				  }
+				  10% {
+				    transform: translateY(-3px) rotate(-3deg) translateX(6px);
+				  }
+				  17% {
+				    transform: translateY(2px) rotate(8deg) translateX(-2px);
+				  }
+				  30% {
+				    transform: translateY(1px) rotate(-2deg) translateX(4px);
+				  }
+				  42% {
+				    transform: translateY(1px) rotate(5deg) translateX(-2px);
+				  }
+				  52% {
+				    transform: translateY(-1px) rotate(-5deg) translateX(10px);
+				  }
+				  60% {
+				    transform: translateY(1px) rotate(3deg) translateX(-5px);
+				  }
+				  74% {
+				    transform: translateY(-10px) rotate(-4deg) translateX(2px);
+				  }
+				  82% {
+				    transform: translateY(1px) rotate(2deg) translateX(-2px);
+				  }
+				  91% {
+				    transform: translateY(-1px) rotate(-2deg) translateX(3px);
+				  }
+				}
+
+    	</style>
+
+		<div class="wrap">
+		</div>
 		
 
 	</div> <!-- END AIR DIV -->
 
 	<div class="canvas-temp" id="fire">
+
+		<div class="homepage-hero-module">
+    		<div class="video-container">
+        		<div class="filter"></div>
+        			<div class="shell">
+        				<video autoplay loop class="fillWidth">
+            				<source src="video/Open-Fire.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        				</video>
+        					<div class="poster hidden">
+            					<img src="" alt="">
+        					</div>
+    				</div>
+			</div>
+		</div>
 		
 
 	</div> <!-- END FIRE DIV -->
 
 	<div class="canvas-temp" id="water">
-		
 
+		<div id='water-bgr'></div>
+			<div id='lake'>
+			  <div id='sploutch'>
+			    <div class='drop color'></div>
+			    	<div id='ripples'>
+			      		<div class='ripple bordercolor'></div>
+			      		<div class='ripple bordercolor'></div>
+			    	</div>
+			    <div id='splashes'>
+			      <div class='splash color'></div>
+			      <div class='splash color'></div>
+			      <div class='splash color'></div>
+				</div>
+  		</div>
+		
 	</div> <!-- END WATER DIV -->
 
 	<div class="canvas-temp" id="earth">
+
+		<div id='bgr'>
+		 <?xml version="1.0" encoding="utf-8"?>
+		<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		   viewBox="0 0 750 431.7" style="enable-background:new 0 0 750 431.7;" xml:space="preserve">
+		<style type="text/css">
+		  .st0{fill:url(#SVGID_1_);}
+		  .st1{filter:url(#Adobe_OpacityMaskFilter);}
+		  .st2{filter:url(#Adobe_OpacityMaskFilter_1_);}
+		  .st3{mask:url(#SVGID_2_);fill:url(#SVGID_3_);}
+		  .st4{fill:url(#SVGID_4_);}
+		  .st5{fill:#A9B2AF;}
+		  .st6{fill:#414045;}
+		  .st7{fill:#454449;}
+		  .st8{fill:#4E504F;}
+		  .st9{fill:#626365;}
+		  .st10{fill:#434247;}
+		  .st11{fill:#47464B;}
+		  .st12{fill:#3C3A3F;}
+		  .st13{fill:#494A4E;}
+		  .st14{fill:#878B8A;}
+		  .st15{fill:#6F7372;}
+		  .st16{fill:#49484D;}
+		  .st17{fill:#4B4C50;}
+		  .st33{fill:#3A373B;}
+		  .st19{fill:#403F44;}
+		  .st20{fill:#424146;}
+		  .st21{fill:#838884;}
+		  .st22{fill:#515153;}
+		  .st23{fill:#46454A;}
+		  .st24{fill:#4B494E;}
+		  .st25{fill:#454346;}
+		  .st26{fill:#A0A59F;}
+		  .st27{fill:#454547;}
+		  .st28{fill:#4C4B50;}
+		  .st29{fill:#3D3B3E;}
+		  .st30{fill:#48494E;}
+		  .st31{fill:#A5AAA4;}
+		  .st32{fill:#838786;}
+		  .st34{fill:#3D3B3E;}
+		</style>
+			<g id="Layer_2">
+			  <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="375" y1="431.6667" x2="375" y2="86.5737">
+			    <stop  offset="0" style="stop-color:#61606B"/>
+			    <stop  offset="1" style="stop-color:#DCE5D8"/>
+			  </linearGradient>
+			  <rect y="-65.3" class="st0" width="750" height="497"/>
+			</g>
+			<g id="Layer_3">
+			  <defs>
+			    <filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="189.1" y="52.9" width="389.2" height="389.2">
+			      <feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+			      <feBlend  in="SourceGraphic" in2="back" mode="normal"/>
+			    </filter>
+			  </defs>
+			  <mask maskUnits="userSpaceOnUse" x="189.1" y="52.9" width="389.2" height="389.2" id="SVGID_2_">
+			    <g class="st1">
+			      <defs>
+			        <filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="189.1" y="52.9" width="389.2" height="389.2">
+			          <feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+			          <feBlend  in="SourceGraphic" in2="back" mode="normal"/>
+			        </filter>
+			      </defs>
+			      <mask maskUnits="userSpaceOnUse" x="189.1" y="52.9" width="389.2" height="389.2" id="SVGID_2_">
+			        <g class="st2">
+			        </g>
+			      </mask>
+			      <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="383.6875" y1="312.6352" x2="383.6875" y2="122.6191">
+			        <stop  offset="0" style="stop-color:#000000"/>
+			        <stop  offset="1" style="stop-color:#FFFFFF"/>
+			      </linearGradient>
+			      <circle class="st3" cx="383.7" cy="247.5" r="194.6"/>
+			    </g>
+			  </mask>
+			  <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="383.6875" y1="312.6352" x2="383.6875" y2="122.6191">
+			    <stop  offset="0" style="stop-color:#FF0000"/>
+			    <stop  offset="1" style="stop-color:#FF0000"/>
+			  </linearGradient>
+			  <circle class="st4" cx="383.7" cy="247.5" r="194.6"/>
+			</g>
+			<g id="Layer_1">
+			  <g><polygon class="st5" points="666.3,341.6 713.1,379.8 750,431.7    "/><polygon class="st6" points="713.1,379.8 567,431.7 750,431.7    "/><polygon class="st7" points="602,358.2 567,431.7 713.1,379.8    "/><polygon class="st8" points="548,310.2 487.8,302.7 567,431.7    "/><polygon class="st9" points="666.3,341.6 602,358.2 713.1,379.8    "/><polygon class="st10" points="462.7,229.2 462.4,243.3 486.5,242.3     "/><polygon class="st11" points="432.2,193.2 407.4,210.9 444.7,198.6     "/><polygon class="st7" points="424.1,177.2 410.3,186.1 432.2,193.2    "/><polygon class="st12" points="375.3,201.4 363.3,210.9 377.1,227     "/><polygon class="st13" points="363.3,210.9 354.2,236.4 377.1,227     "/><polygon class="st14" points="380.7,195.3 375.3,201.4 392.1,206.2     "/><polygon class="st15" points="627.1,324.8 602,358.2 666.3,341.6     "/><polygon class="st6" points="380.7,195.3 392.1,206.2 401.2,189.1    "/><polygon class="st16" points="392.1,206.2 377.1,227 407.4,210.9     "/><polygon class="st17" points="375.3,201.4 377.1,227 392.1,206.2     "/><polygon class="st7" points="410.3,186.1 407.4,210.9 432.2,193.2    "/><polygon class="st10" points="401.2,189.1 392.1,206.2 407.4,210.9     "/><polygon class="st19" points="401.2,189.1 407.4,210.9 410.3,186.1     "/><polygon class="st11" points="401.2,189.1 410.3,186.1 424.1,177.2     "/><polygon class="st20" points="380.7,195.3 401.2,189.1 424.1,177.2     "/><polygon class="st21" points="569,307.2 548,310.2 602,358.2     "/><polygon class="st22 color" points="548,310.2 567,431.7 602,358.2     "/><polygon class="st23" points="407.4,210.9 377.1,227 462.4,243.3     "/><polygon class="st24" points="407.4,210.9 462.4,243.3 462.7,229.2     "/><polygon class="st20" points="444.7,198.6 407.4,210.9 462.7,229.2     "/><polygon class="st25" points="487.8,302.7 244,310.2 567,431.7     "/><polygon class="st26" points="507.6,282 487.8,302.7 548,310.2     "/><polygon class="st27" points="377.1,227 354.2,236.4 487.8,302.7     "/><polygon class="st28" points="462.4,243.3 377.1,227 487.8,302.7     "/><polygon class="st29" points="285,275.2 244,310.2 487.8,302.7     "/><polygon class="st34" points="354.2,236.4 285,275.2 487.8,302.7     "/><polygon class="st20" points="486.5,242.3 462.4,243.3 487.8,302.7     "/><polygon class="st30" points="486.5,242.3 487.8,302.7 507.6,282     "/><polygon class="st20" points="130,345.2 0,431.7 567,431.7     "/><polygon class="st33" points="244,310.2 130,345.2 567,431.7     "/><polygon class="st31" points="507.6,282 548,310.2 569,307.2     "/><polygon class="st32" points="614.7,308.9 602,358.2 627.1,324.8     "/><polygon class="st9" points="569,307.2 602,358.2 614.7,308.9    "/></g></g><g id="Layer_4"></g>
+		</svg>
+
+
+  </div>
 		
 
 	</div> <!-- END EARTH DIV -->
 	
 	
-	<script src="js/jquery.js"></script>
-	<script src="js/foundation.min.js"></script>
+	<script src="js/lib/jquery.js"></script>
+	<script src="js/lib/foundation.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
 	<script src="js/main.js"></script>
+	<script src="js/sound.js"></script>
 	<script src="js/particles.js"></script>
+	<script src="js/ether.js"></script>
+	<script src="js/air.js"></script>
+	<script src="js/fire.js"></script>
+	<script src="js/water.js"></script>
+	<script src="js/earth.js"></script>
+    
 	
 
 </body>

@@ -1,0 +1,84 @@
+.wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #87CEEB;
+  animation: air 180s infinite;
+}
+
+@keyframes air {
+   0% {
+    background-color: #87CEEB;
+  }
+  25% {
+    background-color: #C4A4B3;
+  }
+  50% {
+    background-color: #F4E4CD;
+  }
+  75% {
+    background-color: #C4A4B3;
+  }
+  100% {
+    background-color: #87CEEB;
+  }
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.4rem;
+  font-family: sans-serif;
+  z-index: 100;
+  cursor: pointer;
+}
+.flower {
+  position: absolute;
+  will-change: transform;
+}
+.flower img {
+  will-change: transform;
+  display: inline-block;
+}
+.flower span {
+  will-change: transform;
+  animation: rocking 24.5s alternate infinite;
+  display: inline-block;
+}
+@keyframes rocking {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg) translateX(0);
+  }
+  10% {
+    transform: translateY(-3px) rotate(-3deg) translateX(6px);
+  }
+  17% {
+    transform: translateY(2px) rotate(8deg) translateX(-2px);
+  }
+  30% {
+    transform: translateY(1px) rotate(-2deg) translateX(4px);
+  }
+  42% {
+    transform: translateY(1px) rotate(5deg) translateX(-2px);
+  }
+  52% {
+    transform: translateY(-1px) rotate(-5deg) translateX(10px);
+  }
+  60% {
+    transform: translateY(1px) rotate(3deg) translateX(-5px);
+  }
+  74% {
+    transform: translateY(-10px) rotate(-4deg) translateX(2px);
+  }
+  82% {
+    transform: translateY(1px) rotate(2deg) translateX(-2px);
+  }
+  91% {
+    transform: translateY(-1px) rotate(-2deg) translateX(3px);
+  }
+}
