@@ -1,0 +1,329 @@
+/*	.cls-2 = punktalínur
+	.cls-1 = solid línur*/
+/*+++++++++++ GENERAL STYLING & LAYOUT ++++++++++++*/
+
+#ParticleCanvas{
+  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  margin: auto;
+}
+.icon-row {
+	justify-content: center;
+	margin-top:	15%;
+}
+.headline-row {
+	margin-top: 3%;
+}
+/*+++++++++++++++ MENU ANIMATIONS ++++++++++++++*/
+
+@keyframes menuicon {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+
+/*+++++++++++++++ MENU STYLING ++++++++++++++*/
+.menu {
+	width: 175px;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	left: -7.6%;
+	background: #fff1fa;
+	transition: 1s ease-in-out;
+}
+.active {
+	left: 0;
+}
+.menu ul {
+	text-align: center;
+    margin-left: 1rem;
+}
+.menu-item {
+	margin: 24px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+    animation: menuicon 0.5s 1.5s ease-out backwards;
+
+}
+.menu-item:nth-child()
+.menu-item-icon {
+	height: 70px;
+}
+.menu-fire {
+	height: 57px;
+}
+.menu-p {
+	text-align: center;
+	font-size: 12px;
+	color: #000;
+}
+.menu-item:hover .menu-whole{
+    stroke:#D0011B;
+}
+ .menu-item:hover .menu-dotted {
+    stroke:#D0011B; 
+ }
+ .menu-item:hover .menu-p {
+    color:#D0011B;
+ }
+ .menu-ether {
+	display: flex;
+	width: 59px;
+}
+
+.menu-air {
+	display: flex;
+	width: 51px;
+}
+
+.menu-fire {
+	display: flex;
+	width: 55px;
+}
+
+.menu-water{
+	display: flex;
+	width: 55px;
+}
+
+.menu-earth{
+	display: flex;
+	width: 52px;
+}
+
+/*.vertical-text {
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+	float: left;
+}
+/*+++++++++++++++ HARMONY KEYFRAMES ++++++++++++++*/
+@keyframes harmony-animate {
+	
+	from {
+		opacity: 0;
+	}
+	to {
+		fill: #0D54A7;
+		opacity: 0.8;
+	}
+}
+/*+++++++++++++++ HARMONY STYLING ++++++++++++++*/
+ #Forsida {
+ 	opacity: 0;
+ 	transform-origin: 50% 50%;
+ 	animation: harmony-animate 1.7s 3.7s linear forwards;
+ }  
+
+/*+++++++++++++++ EARTH ANIMATIONS ++++++++++++++*/
+@keyframes earth-offset {
+	
+	100% {
+		stroke-dasharray: 260;
+		stroke-dashoffset: 0;
+	}
+}
+/*+++++++++++++++FIRE ANIMATIONS+++++++++*/
+@keyframes fire-offset {
+	100% {
+		stroke-dasharray: 241;
+		stroke-dashoffset: 0;
+	}
+}
+
+
+/*+++++++++++++++AIR ANIMATIONS+++++++++*/
+@keyframes air-offset {
+	100%{
+		stroke-dasharray: 255;
+		stroke-dashoffset: 0;
+	}
+}
+/*+++++++++++++++ETHER ANIMATIONS+++++++++*/
+@keyframes ether-offset {
+	
+	100% {
+		stroke-dasharray: 260;
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes water-offset {
+
+	100%{
+		stroke-dasharray: 280;
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes cls-class {
+	70% {
+		opacity: .2;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/*++++++++++++++ ELEMENT ICON STYLING +++++++++++++++++++*/
+.whole-lines,
+.dotted-lines,
+.menu-whole,
+.menu-dotted {
+	fill:none;
+	stroke:#8CBDF7;
+	stroke-miterlimit:0;
+	}
+.dotted-lines,
+.menu-dotted	{
+	stroke-dasharray:2 2;
+}
+g 	{
+	margin: 0 3%;
+}
+.element-icon {
+	height: 100px;
+}
+/* EARTH */
+.earth {
+	stroke-dasharray: 260;
+    stroke-dashoffset: 260;
+	animation: earth-offset 3s linear forwards;
+}
+/* FIRE */
+.fire {
+	stroke-dasharray: 241;
+	stroke-dashoffset: 241;
+	animation: fire-offset 3s linear forwards;
+}
+/* WATER */
+.water {
+	stroke-dasharray: 280;
+    stroke-dashoffset: 280;
+	animation: water-offset 3s 0.1s linear forwards;
+}
+/* ETHER */
+.ether .whole-lines {
+	stroke-dasharray: 260;
+	stroke-dashoffset: 260;
+	animation: ether-offset 3s  0.2s ease-out forwards;	
+	
+}
+/*.inner-ether {
+	stroke-dasharray: 132;
+    stroke-dashoffset: 132;
+}*/
+
+/* AIR */
+.air {
+	stroke-dasharray: 255;
+    stroke-dashoffset: 255;
+	animation: air-offset 3s linear forwards;
+}
+
+ .dotted-lines {
+	opacity: 0;
+	stroke-miterlimit: 10;
+	animation: cls-class 3.5s cubic-bezier(.65,.25,.68,.71) forwards;
+}
+
+/**+++++++++++ QUOTE ROW STYLING +++++++++++++++*/
+.quote-row {
+	margin: -7% 45%;
+    display: block;
+    text-align: right;
+    width: 26%;
+    letter-spacing: .14em;
+    animation: harmony-animate 1.7s 4.3s linear forwards;
+    opacity: 0;
+}
+#quote, #author, .headphone-p, .intro-p {
+	font-family: 'PT Sans', sans-serif;
+	font-style: italic;
+	color: #0D54A7;
+	font-size: 20px;
+}
+#quote, #author {
+	color: #0D54A7;
+	font-size: 20px;
+
+}	
+#author {
+	text-align: right;
+    margin-right: 9%;
+}
+
+/*++++++++CANVAS TEMP STYLING++++++++++++++*/
+
+.canvas-temp {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#ether {
+	background: #746;
+
+}
+#fire {
+	background: #172;
+
+}
+
+#earth {
+	background: #039;
+
+}
+
+#water {
+	background: #283;
+
+}
+#air {
+	background: #f84;
+
+}
+
+/*+++++++++++++++  HEADPHONE WRAPPER STYLING  ++++++++++++++++*/
+.second-wrapper {
+	margin-top: 30vh;
+	display: none;
+}
+.headphone-p, .intro-p {
+	/* SEE LINE 326*/
+	text-align: center;
+	margin-top: 39px;
+}
+#headphones {
+	height: 70px;
+}
+
+/*+++++++++++++++++++++ INTRODUCTION WRAPPER STYLING++++++++++*/
+	.third-wrapper {
+		display: none;
+	}
+
+	.intro-p {
+		margin-top: 21.2%;
+	}
+    
