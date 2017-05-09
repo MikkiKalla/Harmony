@@ -69,7 +69,7 @@ function scaleBannerVideoSize(element){
         let y = e.pageY;
         const color = randomColor()
         const scale = randomScale()
-        console.log(color, scale)
+        // console.log(color, scale);
         let circle = $('<div class="circle"></div>').css({
             "position": "absolute",                    
             "left": x- (parseInt(scale)/2),

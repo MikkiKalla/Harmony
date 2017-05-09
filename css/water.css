@@ -1,5 +1,4 @@
-body {
-  background: #D9E8F9;
+#water {
   overflow: hidden;
 }
 #water-bgr {
@@ -9,7 +8,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: #D9E8F9);
+  background: #D9E8F9;
 }
 
 #speaker-amb img{

@@ -30,7 +30,7 @@ document.addEventListener('keydown', (e) => {
         case 75: loadSoundFiles('../audio/kh10.wav');
         case 75: blink(75);
         break;
-        default: console.log('Ótengdur lykill');
+        // default: console.log('Ótengdur lykill');
       }
     });
 
@@ -41,5 +41,5 @@ document.addEventListener('keydown', (e) => {
 
 function blink(e) {
     document.getElementById('star1').classList.add("star1");
-    console.log(e);
+    // console.log(e);
   }

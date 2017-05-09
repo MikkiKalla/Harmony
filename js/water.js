@@ -40,7 +40,7 @@ document.addEventListener('keydown', (e) => {
         case 75: loadSoundFiles('../audio/kmb10.wav');
         case 75: createColorRipples("crimson");
         break;
-        default: console.log('halló');
+        // default: console.log('halló');
       }
     });
 

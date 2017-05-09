@@ -5,7 +5,7 @@ function loadSoundFiles(url) {
   request.open('GET', url, true);
   request.responseType = 'arraybuffer';
 
-  console.log(context)
+  // console.log(context)
 
   // Decode asynchronously
   request.onload = function() {

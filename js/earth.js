@@ -36,6 +36,6 @@ document.addEventListener('keydown', (e) => {
         case 75: loadSoundFiles('../audio/kh10.wav');
         case 75: document.querySelector('.st29').style.fill = randomColor(); 
         break;
-        default: console.log('halló');
+        // default: console.log('halló');
       }
     });

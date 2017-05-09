@@ -85,7 +85,7 @@ function playRandomSound(){
 
 	var currentsound = sounds[Math.floor(Math.random() * 8)];
 	
-	console.log(currentsound);
+	// console.log(currentsound);
 	
 	loadSoundFiles(currentsound);
 }

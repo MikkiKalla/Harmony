@@ -7,7 +7,8 @@ $(document).ready(() => {
 
 	$(".menu-item").click(function() {
 	 	$(".canvas-temp").hide().eq( $(this).index() ).show();
-	 	
+	 	console.log($(this).attr("href").slice(1));
+	 	element($(this).attr("href").slice(1));
 	 });
 
 	 $(function() {
