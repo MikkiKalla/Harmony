@@ -238,7 +238,7 @@ function scaleBannerVideoSize(element){
 
 /************Deplar*****************/
 
-    $(document).click((e) => {
+    $("#fire").click((e) => {
         let x = e.pageX;
         let y = e.pageY;
         const color = randomColor()

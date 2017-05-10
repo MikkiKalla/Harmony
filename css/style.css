@@ -254,7 +254,7 @@ g 	{
     animation: harmony-animate 1.7s 4.3s linear forwards;
     opacity: 0;
 }
-#quote, #author, .headphone-p, .intro-p {
+#quote, #author, .headphone-p, .intro-p, .intro-p-2 {
 	font-family: 'PT Sans', sans-serif;
 	font-style: italic;
 	color: #0D54A7;
@@ -282,7 +282,7 @@ g 	{
 }
 
 
-/*+++++++++++++++  HEADPHONE WRAPPER STYLING  ++++++++++++++++*/
+/*+++++++++++++++  SECOND WRAPPER STYLING  ++++++++++++++++*/
 .second-wrapper {
 	margin-top: 30vh;
 	display: none;
@@ -296,12 +296,24 @@ g 	{
 	height: 70px;
 }
 
-/*+++++++++++++++++++++ INTRODUCTION WRAPPER STYLING++++++++++*/
+/*+++++++++++++++++++++ THIRD WRAPPER STYLING++++++++++*/
 	.third-wrapper {
 		display: none;
+		width: 400px;
+		margin-top: 30vh;
 	}
-
+	.intro-p-2 {
+		margin-top: 11%;
+		text-align: center;
+	}
 	.intro-p {
 		margin-top: 21.2%;
 	}
+
+
+
+/*+++++++++++++ FOURTH WRAPPER STYLING +++++++++++++++++*/
+.fourth-wrapper {
+	display: none;
+}
     

@@ -21,14 +21,20 @@ $(document).ready(() => {
 	 		$(".second-wrapper").delay(10000).fadeIn(2400);
 	 		console.log("Headphone fadeIn done ");
 	 		$(function() {
-      			$(".second-wrapper").delay(5000).fadeOut(2450);
+      			$(".second-wrapper").delay(2000).fadeOut(2450);
       			console.log("Headphone fadeOut done");
-      		}, 3000);
+      		}, 1000);
 	 	});
 		setTimeout(function () {
 	      	$(".third-wrapper").delay(17000).fadeIn(2450);
-	    }, 3000); 
-	    	console.log("third-wrapper fadeIn done");
+	      	$(function() {
+	      		$(".third-wrapper").delay(2000).fadeOut(2450);
+	      	}, 3000);
+	    }); 
+			console.log("third-wrapper fadeIn done");
+	    setTimeout(function() {
+	    	$(".fourth-wrapper").delay(25000).fadeIn(2450);
+	    });	
 		 	console.log("nav activate");
 	 });
 
@@ -83,11 +89,11 @@ $(document).ready(() => {
 	    	name:"-Samuel Beckett-"
 	    },
 	    {
-	    	quote:"Be yourself; everyone else is already taken.",
+	    	quote:"Be yourself, everyone else is already taken.",
 	    	name:"-Oscar Wilde-"
 	    },
 	    {
-	    	quote:"Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
+	    	quote:"Two things are infinite. The universe and human stupidity, and I'm not sure about the universe.",
 	    	name:"-Albert Einstein-"
 	    },
 	    {
