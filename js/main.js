@@ -37,6 +37,23 @@ $(document).ready(() => {
 	    });	
 		 	console.log("nav activate");
 	 });
+	 let soundIsPlaying = true;
+	 
+	 $('#playSound').on('click', function() {
+	 	if (soundIsPlaying){
+	 		$("audio")[0].pause();
+	 		$('#playSound').hide(); //icon for sound
+  			$('#pauseSound').show(); //icon for soundoff
+	 	}
+	 	else {
+	 		$("audio")[0].play();
+	 		$('#playSound').show(); //icon for sound
+  			$('#pauseSound').hide(); //icon for soundoff
+	 	}
+    	
+     
+    	
+	});
 
 
 	 const quoteList = [ //random quote generator array

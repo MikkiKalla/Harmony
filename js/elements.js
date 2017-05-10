@@ -40,7 +40,7 @@ function randomColor() {
 const WaterkeyDownListener = (e) => {
       switch(e.keyCode) {
         case 90: loadSoundFiles('../audio/kmb1.wav');
-        case 90: createColorRipples("Aquamarine ");
+        case 90: createColorRipples("DeepSkyBlue");
         break;
         case 88: loadSoundFiles('../audio/kmb2.wav');
         case 88: createColorRipples("CornflowerBlue");         
@@ -64,10 +64,10 @@ const WaterkeyDownListener = (e) => {
         case 188: createColorRipples("aqua");
         break;
         case 74: loadSoundFiles('../audio/kmb9.wav');
-        case 74: createColorRipples("coral");
+        case 74: createColorRipples("");
         break;
         case 75: loadSoundFiles('../audio/kmb10.wav');
-        case 75: createColorRipples("crimson");
+        case 75: createColorRipples("");
         break;
         // default: console.log('halló');
       }
@@ -110,34 +110,34 @@ const WaterkeyDownListener = (e) => {
 
 const EarthKeyDownListener = (e) => {
       switch(e.keyCode) {
-        case 90: loadSoundFiles('../audio/kh1.wav');
+        case 90: loadSoundFiles('audio/kmb1rp.wav');
         case 90: document.querySelector('.st22').style.fill = randomColor();
         break;
-        case 88: loadSoundFiles('../audio/kh2.wav');
+        case 88: loadSoundFiles('audio/kmb2rp.wav');
         case 88: document.querySelector('.st33').style.fill = randomColor();      
         break;
-        case 67: loadSoundFiles('../audio/kh3.wav');
+        case 67: loadSoundFiles('audio/kmb3rp.wav');
         case 67: document.querySelector('.st23').style.fill = randomColor();  
         break;
-        case 86: loadSoundFiles('../audio/kh4.wav');
+        case 86: loadSoundFiles('audio/kmb4rp.wav');
         case 86: document.querySelector('.st12').style.fill = randomColor(); 
         break;
-        case 66: loadSoundFiles('../audio/kh5.wav');
+        case 66: loadSoundFiles('audio/kmb6rp.wav');
         case 66: document.querySelector('.st11').style.fill = randomColor(); 
         break;
-        case 78: loadSoundFiles('../audio/kh6.wav');
+        case 78: loadSoundFiles('audio/kmb7rp.wav');
         case 78: document.querySelector('.st16').style.fill = randomColor(); 
         break;
-        case 77: loadSoundFiles('../audio/kh7.wav');
+        case 77: loadSoundFiles('audio/kmb1rp.wav');
         case 77: document.querySelector('.st7').style.fill = randomColor(); 
         break;
-        case 188: loadSoundFiles('../audio/kh8.wav');
+        case 188: loadSoundFiles('audio/kmb2rp.wav');
         case 188: document.querySelector('.st26').style.fill = randomColor(); 
         break;
-        case 74: loadSoundFiles('../audio/kh9.wav');
+        case 74: loadSoundFiles('audio/kmb3rp.wav');
         case 74: document.querySelector('.st19').style.fill = randomColor(); 
         break;
-        case 75: loadSoundFiles('../audio/kh10.wav');
+        case 75: loadSoundFiles('audio/kmb4rp.wav');
         case 75: document.querySelector('.st29').style.fill = randomColor(); 
         break;
         // default: console.log('halló');
@@ -308,8 +308,9 @@ function blink(e) {
      console.log(e)
   }
 }
-
+let numberOfFlowers = 12;
 const getAir= () => {
+    $("audio")[0].play();
 	var win = window,
 	doc = document,
 	body = doc.body;
@@ -318,13 +319,12 @@ var a = TweenMax;
 
 var wrap = doc.getElementsByClassName('wrap')[0],
 	title = doc.getElementsByClassName('title')[0];
-
 var ops = {
-	count: 12,
+	count: numberOfFlowers,
 	ease: Power3.easeInOut,
 	src: 'images/frae.png'
 }
-
+numberOfFlowers = 0;
 var items = [];
  
 function Flower(i){
@@ -385,14 +385,14 @@ for (var i = 0; i < ops.count-1; i++) {
 
 function playRandomSound(){
 	var sounds = [
-				 "../audio/vp1.wav",
-				 "../audio/vp2.wav",
-				 "../audio/vp3.wav",
-				 "../audio/vp4.wav",
-				 "../audio/vp5.wav",
-				 "../audio/vp6.wav",
-				 "../audio/vp7.wav",
-				 "../audio/vp8.wav"
+				 "../audio/wp1.wav",
+				 "../audio/wp2.wav",
+				 "../audio/wp3.wav",
+				 "../audio/wp4.wav",
+				 "../audio/wp5.wav",
+				 "../audio/wp6.wav",
+				 "../audio/wp7.wav",
+				 "../audio/wp8.wav"
 				 ];
 
 	var currentsound = sounds[Math.floor(Math.random() * 8)];

@@ -35,3 +35,41 @@
     fill: #DB201C;
   }
 }
+#ambience {
+  float: right;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+audio {
+  display: none;
+}
+.play i {
+  position: absolute;
+  color: #727180;
+  font-size: 20px;
+}
+
+.share {
+  float: right;
+  margin-top:60px;
+
+}
+.fa-share-alt {
+  position: absolute;
+  color: #727180;
+  height: 5px;
+}
+
+#pauseSound {
+  display: none;
+}
+
+.text-play p {
+  position: absolute;
+  margin-top: 110px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  color: #727180;
+  letter-spacing: 1.67px;
+  margin-left: -9px;
+}
