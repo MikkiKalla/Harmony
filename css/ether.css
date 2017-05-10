@@ -6,7 +6,7 @@
   width: 200%; 
   height: 200%;
 }*/
-#bgr img {
+#etherbgr img {
   position: absolute; 
   top: 0; 
   left: 0; 
@@ -27,6 +27,12 @@
    to { 
      transform: scale(2); 
    }
+}
+
+.play-ether i {
+  position: absolute;
+  color: #FEF7EB;
+  font-size: 20px;
 }
 
 

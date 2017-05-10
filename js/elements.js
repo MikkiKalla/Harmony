@@ -291,8 +291,6 @@ function scaleBannerVideoSize(element){
         }
 });
 
-
-
 }
 
 const getEther = () => {
@@ -303,10 +301,10 @@ const getEther = () => {
   // if(e.keyCode == 90) start();
 // });
 
-function blink(e) {
-    document.getElementById('star1').classList.add("star1");
-     console.log(e)
-  }
+// function blink(e) {
+    // document.getElementById('star1').classList.add("star1");
+     // console.log(e)
+  // }
 }
 let numberOfFlowers = 12;
 const getAir= () => {

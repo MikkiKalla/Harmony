@@ -53,11 +53,16 @@ audio {
   float: right;
   margin-top:60px;
 
+
 }
 .fa-share-alt {
   position: absolute;
   color: #727180;
   height: 5px;
+}
+
+.fa-air {
+  margin-left: -12px;
 }
 
 #pauseSound {

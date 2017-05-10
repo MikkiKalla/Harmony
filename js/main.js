@@ -37,7 +37,26 @@ $(document).ready(() => {
 	    });	
 		 	console.log("nav activate");
 	 });
-	 let soundIsPlaying = true;
+
+	 let soundIsPlaying = false;
+
+	 document.getElementById("ambience").innerHTML = "audio";
+
+		$('#pauseSound').on('click', function() {
+    	$("audio")[0].play();
+     
+    	$('#playSound').show(); //icon for sound
+  		$('#pauseSound').hide(); //icon for soundoff
+	});
+
+		$('#playSound').on('click', function() {
+    	$("audio")[0].pause();
+  
+ 		$('#pauseSound').show();
+  		$('#playSound').hide();
+	});
+
+	 /*let soundIsPlaying = false;
 	 
 	 $('#playSound').on('click', function() {
 	 	if (soundIsPlaying){
@@ -53,7 +72,7 @@ $(document).ready(() => {
     	
      
     	
-	});
+	});*/
 
 
 	 const quoteList = [ //random quote generator array
