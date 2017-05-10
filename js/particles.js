@@ -21,7 +21,7 @@ window.onload = function() {
           particleIndex = 0,
           settings = {
             density: 10,
-            particleSize: 4.6,
+            particleSize: 2.6,
             startingX: ParticleCanvas.width / 2,
             startingY: ParticleCanvas.height,
             gravity: -0.01
