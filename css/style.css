@@ -17,7 +17,7 @@
 	margin-top:	15%;
 }
 .headline-row {
-	margin-top: 3%;
+	margin-top: 1%;
 }
 /*+++++++++++++++ MENU ANIMATIONS ++++++++++++++*/
 
@@ -46,7 +46,7 @@
 	position: fixed;
 	top: 0;
 	z-index: 1;
-	left: -7.6%;
+	left: -11vw;
 	background: #fff1fa;
 	transition: 1s ease-in-out;
 }
@@ -58,15 +58,15 @@
     margin-left: 1rem;
 }
 .menu-item {
-	margin: 24px 8px 8px 32px;
+	margin: 24px 41px 8px 17px;
     text-decoration: none;
     font-size: 25px;
-    display: block;
-    transition: 0.3s;
+    display: inline-block;
     animation: menuicon 0.5s 1.5s ease-out backwards;
-
 }
-.menu-item:nth-child()
+
+/*.menu-item:nth-child()*/
+
 .menu-item-icon {
 	height: 70px;
 }
@@ -76,16 +76,21 @@
 .menu-p {
 	text-align: center;
 	font-size: 12px;
-	color: #000;
+    color: #515151;
+    margin-top: 7px;
+
 }
 .menu-item:hover .menu-whole{
     stroke:#D0011B;
+    transition: 1s
 }
  .menu-item:hover .menu-dotted {
     stroke:#D0011B; 
+    transition: 1s
  }
  .menu-item:hover .menu-p {
     color:#D0011B;
+    transition: 1s
  }
  .menu-ether {
 	display: flex;
@@ -129,11 +134,15 @@
 	}
 }
 /*+++++++++++++++ HARMONY STYLING ++++++++++++++*/
- #Forsida {
+ .harmony-head{
  	opacity: 0;
  	transform-origin: 50% 50%;
  	animation: harmony-animate 1.7s 3.7s linear forwards;
  }  
+ .headline-row .harmony-head {
+	height: 254px;
+    margin-left: 23vw;
+}
 
 /*+++++++++++++++ EARTH ANIMATIONS ++++++++++++++*/
 @keyframes earth-offset {
@@ -199,7 +208,7 @@ g 	{
 	margin: 0 3%;
 }
 .element-icon {
-	height: 100px;
+	height: 70px;
 }
 /* EARTH */
 .earth {
@@ -245,6 +254,9 @@ g 	{
 }
 
 /**+++++++++++ QUOTE ROW STYLING +++++++++++++++*/
+
+
+
 .quote-row {
 	margin: -7% 45%;
     display: block;
@@ -258,16 +270,17 @@ g 	{
 	font-family: 'PT Sans', sans-serif;
 	font-style: italic;
 	color: #0D54A7;
-	font-size: 20px;
+	font-size: 16px;
 }
 #quote, #author {
 	color: #0D54A7;
-	font-size: 20px;
+	font-size: 13px;
+    line-height: 1.5;
 
 }	
 #author {
 	text-align: right;
-    margin-right: 9%;
+    margin: 9% 0;
 }
 
 /*++++++++CANVAS TEMP STYLING++++++++++++++*/
@@ -307,7 +320,7 @@ g 	{
 		text-align: center;
 	}
 	.intro-p {
-		margin-top: 21.2%;
+		margin-top: 17.2%;
 	}
 
 
