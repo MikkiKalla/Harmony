@@ -27,34 +27,33 @@ $(document).ready(() => {
 	 	});
 		setTimeout(function () {
 	      	$(".third-wrapper").delay(17000).fadeIn(2450);
-	      	$(function() {
-	      		$(".third-wrapper").delay(2000).fadeOut(2450);
-	      	}, 3000);
 	    }); 
 			console.log("third-wrapper fadeIn done");
-	    setTimeout(function() {
-	    	$(".fourth-wrapper").delay(25000).fadeIn(2450);
-	    });	
 		 	console.log("nav activate");
 	 });
 
-	 let soundIsPlaying = false;
+	 $(".player").hover(function() {
+	 	$(".element-overlay").toggleClass("showing");
+	 	return false;
+	 });
 
-	 document.getElementById("ambience").innerHTML = "audio";
+	//  let soundIsPlaying = false;
 
-		$('#pauseSound').on('click', function() {
-    	$("audio")[0].play();
+	//  document.querySelector("ambience").innerHTML = "audio";
+
+	// 	$('#pauseSound').on('click', function() {
+ //    	$("audio")[0].play();
      
-    	$('#playSound').show(); //icon for sound
-  		$('#pauseSound').hide(); //icon for soundoff
-	});
+ //    	$('#playSound').show(); //icon for sound
+ //  		$('#pauseSound').hide(); //icon for soundoff
+	// });
 
-		$('#playSound').on('click', function() {
-    	$("audio")[0].pause();
+	// 	$('#playSound').on('click', function() {
+ //    	$("audio")[0].pause();
   
- 		$('#pauseSound').show();
-  		$('#playSound').hide();
-	});
+ // 		$('#pauseSound').show();
+ //  		$('#playSound').hide();
+	// });
 
 	 /*let soundIsPlaying = false;
 	 
@@ -68,11 +67,9 @@ $(document).ready(() => {
 	 		$("audio")[0].play();
 	 		$('#playSound').show(); //icon for sound
   			$('#pauseSound').hide(); //icon for soundoff
-	 	}
+	 	}*/
     	
      
-    	
-	});*/
 
 
 	 const quoteList = [ //random quote generator array

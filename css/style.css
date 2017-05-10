@@ -47,7 +47,7 @@
 	top: 0;
 	z-index: 1;
 	background: #FEF7EB;
-	left: -11vw;
+	left: -10.4vw;
 	transition: 1s ease-in-out;
 }
 .active {
@@ -74,11 +74,21 @@
 	height: 57px;
 }
 .menu-p {
-	text-align: center;
-	font-size: 12px;
+    text-align: center;
+    font-size: 10px;
     color: #515151;
     margin-top: 7px;
+    letter-spacing: 0.30em;
 
+}
+.menu-text {
+	transform: rotate(-90deg);
+    position: absolute;
+    right: -24px;
+    font-size: 10px;
+    color: #515151;
+    margin-top: 7px;
+    letter-spacing: 0.30em;
 }
 .menu-item:hover .menu-whole{
     stroke:#D0011B;
@@ -306,27 +316,43 @@ g 	{
 	margin-top: 39px;
 }
 #headphones {
-	height: 70px;
+	height: 50px;
 }
 
 /*+++++++++++++++++++++ THIRD WRAPPER STYLING++++++++++*/
 	.third-wrapper {
 		display: none;
-		width: 400px;
 		margin-top: 30vh;
 	}
 	.intro-p-2 {
-		margin-top: 11%;
+		margin-top: 3%;
 		text-align: center;
 	}
 	.intro-p {
 		margin-top: 17.2%;
 	}
+/*++++++++++++++++++++ ELEMENT OVERLAY STYLING ++++++++++++++++++++++++++++*/
 
-
-
-/*+++++++++++++ FOURTH WRAPPER STYLING +++++++++++++++++*/
-.fourth-wrapper {
+.element-overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0.8;
+	z-index: 2;
+	background: #fff;
 	display: none;
 }
-    
+.showing {
+	display: block;
+}
+
+.element-overlay .keyboard {
+	height: 48px;
+    margin-top: 29vh;
+}
+.mouse {
+	 height: 100px;
+    margin-top: 9%;
+}

@@ -28,14 +28,7 @@
      transform: scale(2); 
    }
 }
-
-.play-ether i {
-  position: absolute;
-  color: #FEF7EB;
-  font-size: 20px;
-}
-
-
+/* see earth.css line 62*/
 .stars {
 	position: absolute;
 	opacity: 1;
