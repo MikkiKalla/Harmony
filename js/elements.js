@@ -4,11 +4,11 @@ function createColorRipples(color){
   var lake = document.getElementById("lake");
   var tx =  Math.random()*WIDTH;
   var ty = (Math.random()+.5)*HEIGHT*.5;
-  var spltch = document.getElementById("sploutch");
+  var sploutch = document.getElementById("sploutch");
 
   var c = document.getElementsByClassName("color");
   var bc = document.getElementsByClassName("bordercolor");
-  var cln = spltch.cloneNode(true);
+  var cln = sploutch.cloneNode(true);
   cln.querySelectorAll('.ripple').forEach(function(ripple){
     ripple.style.borderColor = color;
     ripple.style.borderWidth = (Math.floor(Math.random() * 10)+2)+'px';
@@ -151,6 +151,7 @@ const element = (elementName) => {
 	if (elementName === "water") {
 		getWater();
 	} else if (elementName === "fire") {
+
 		getFire();
 	} else if (elementName === "ether") {
 		getEther();
