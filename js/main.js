@@ -33,7 +33,7 @@ $(document).ready(() => {
 	 });
 
 	 $(".player").hover(function() {
-	 	$(".element-overlay").toggleClass("showing");
+	 	$(".element-overlay").toggleClass("showing").easeIn(1000);
 	 	return false;
 	 });
 
